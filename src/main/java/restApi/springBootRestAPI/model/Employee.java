@@ -1,7 +1,13 @@
 package restApi.springBootRestAPI.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Employee {
 	
+	@Id
     private long id;
     private String name;
     private String sex;
@@ -11,7 +17,6 @@ public class Employee {
     public Employee(){ }
 
 	public Employee(long id, String name, String sex, double salary, String phone) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.sex = sex;
