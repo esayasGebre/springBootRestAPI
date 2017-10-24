@@ -3,10 +3,10 @@ Technology used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, 
 IDE: Eclipse
 Testing tool: Postman
 
-This project has different layers ( Domain, Controller, Service, Repository )
+I have used different layers ( Domain, Controller, Service, Repository )
 
 
-sample:: using ostman::
+sample:: using Postman::
 
 Inserting new Employee::
 POST  http://localhost:8080/springBootRestAPI/employee/
