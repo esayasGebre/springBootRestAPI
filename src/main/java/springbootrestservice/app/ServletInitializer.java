@@ -1,4 +1,4 @@
-package restApi.springBootRestAPI;
+package springbootrestservice.app;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
