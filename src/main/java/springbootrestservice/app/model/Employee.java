@@ -1,20 +1,20 @@
-package restApi.springBootRestAPI.model;
+package springbootrestservice.app.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Employee {
-	
+
 	@Id
-    private long id;
-    private String name;
-    private String sex;
-    private double salary;
-    private String phone;
- 
-    public Employee(){ }
+	private long id;
+	private String name;
+	private String sex;
+	private double salary;
+	private String phone;
+
+	public Employee() {
+	}
 
 	public Employee(long id, String name, String sex, double salary, String phone) {
 		this.id = id;
@@ -114,5 +114,4 @@ public class Employee {
 		return "Employee [name=" + name + ", sex=" + sex + ", salary=" + salary + ", phone=" + phone + "]";
 	}
 
-    
 }

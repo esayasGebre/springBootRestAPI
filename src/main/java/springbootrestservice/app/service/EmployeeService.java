@@ -1,12 +1,12 @@
-package restApi.springBootRestAPI.service;
+package springbootrestservice.app.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import restApi.springBootRestAPI.model.Employee;
-import restApi.springBootRestAPI.repository.EmployeeRepository;
+import springbootrestservice.app.model.Employee;
+import springbootrestservice.app.repository.EmployeeRepository;
 
 @Service
 public class EmployeeService {
@@ -27,12 +27,6 @@ public class EmployeeService {
 	}
 
 	public boolean isEmployeeExist(Long empId) {
-		if(empRepository.getOne(empId).equals(null))
-			return false;
-		
-		return true;
+		return empRepository.getOne(empId).equals(null) ? false : true;
 	}
-
-
-
 }
